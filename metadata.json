@@ -1,0 +1,7 @@
+{
+  "name": "SuomiStart - Accessible Finnish Learning",
+  "description": "An interactive, accessible Finnish language learning app powered by Gemini. Tailored for beginners, travelers, and diverse accessibility needs.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
