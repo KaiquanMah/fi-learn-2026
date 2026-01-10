@@ -150,6 +150,50 @@ Please refer to data/curriculum.md.
 
 ## 8. Future Roadmap
 1.  **Backend Integration**: Python + SQLite backend to store user XP and quiz history.
-2.  **Containerization**: Dockerfile to package the full stack.
+2.  **Containerization**: Dockerfile to package the full stack. - DONE on 2026.01.10 Sat
 3.  **Gamification**: Badges for "7 Day Streak", "Vocabulary Master".
 
+
+## 9. Deployment Guide
+
+Here are the steps to create, run, and deploy your application.
+
+### 9.1 Run with Docker (Localhost)
+You can run the application locally using Docker Compose.
+
+Steps:
+* Open your terminal in the project directory
+* Run the build and start command:
+```bash
+docker-compose up --build
+```
+* Once the container starts, open your browser to: http://localhost:3000
+Navigate to the Settings page (using the gear icon or menu) and enter your Gemini API Key. This is required for the Live Tutor feature.
+
+### 9.2 Deploy to Vercel
+Vercel is the easiest way to deploy this Vite + React application.
+
+Steps:
+* Push your code to GitHub: Ensure your latest changes (including the Dockerfile, Settings.tsx updates, etc.) are committed and pushed to your GitHub repository.
+* Import Project in Vercel:
+    * Go to your Vercel Dashboard.
+    * Click "Add New..." -> "Project".
+    * Import your `fi-learn-2026` repository.
+* Configure Build Settings:
+    * Framework Preset: Select Vite (Vercel should detect this automatically).
+    * Build Command: `npm run build` (Default)
+    * Output Directory: `dist` (Default)
+* Environment Variables:
+    * Since the application saves the API Key in the user's browser (Local Storage) via the Settings page, you do NOT need to set the API Key as an environment variable in Vercel for the standard deployment.
+    * Note: The application runs entirely client-side. The API Key is entered by the user.
+* Deploy:
+    * Click "Deploy".
+    * Wait for the build to complete.
+* Post-Deployment:
+    * Open your deployed URL (e.g., https://suomistart.vercel.app).
+    * Go to Settings and enter your Gemini API Key to enable the AI features.
+
+### 9.3 Summary of Docker Commands
+* Start: `docker-compose up --build`
+* Stop: Press `Ctrl+C` in the terminal.
+* Remove Containers: `docker-compose down`

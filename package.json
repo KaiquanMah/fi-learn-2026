@@ -11,13 +11,16 @@
   "devDependencies": {
     "@google-cloud/text-to-speech": "^5.0.1",
     "@types/node": "^20.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "dotenv": "^16.4.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "generate-audio": "ts-node scripts/generate_audio.ts"
   }
 }

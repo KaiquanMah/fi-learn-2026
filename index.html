@@ -1,56 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>SuomiStart</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              finland: {
-                blue: '#003580',
-                white: '#FFFFFF',
-                light: '#F0F5FF',
-                dark: '#002050'
-              }
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>SuomiStart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            finland: {
+              blue: '#003580',
+              white: '#FFFFFF',
+              light: '#F0F5FF',
+              dark: '#002050'
             }
           }
         }
       }
-    </script>
-    <style>
-      /* Accessibility overrides */
-      .text-large { font-size: 1.25rem; line-height: 1.75rem; }
-      .text-xlarge { font-size: 1.5rem; line-height: 2rem; }
-      
-      .high-contrast {
-        background-color: #000;
-        color: #fff;
-      }
-      .high-contrast .bg-white { background-color: #000; border: 2px solid #fff; }
-      .high-contrast .text-gray-600 { color: #ddd; }
-      .high-contrast .bg-finland-blue { background-color: #FFD700; color: #000; }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "path": "https://esm.sh/path@^0.12.7",
-    "@google-cloud/text-to-speech": "https://esm.sh/@google-cloud/text-to-speech@^6.4.0",
-    "fs": "https://esm.sh/fs@^0.0.1-security"
-  }
-}
-</script>
+    }
+  </script>
+  <style>
+    /* Accessibility overrides */
+    .text-large {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+
+    .text-xlarge {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .high-contrast {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .high-contrast .bg-white {
+      background-color: #000;
+      border: 2px solid #fff;
+    }
+
+    .high-contrast .text-gray-600,
+    .high-contrast .text-slate-500,
+    .high-contrast .text-slate-400 {
+      color: #fff;
+    }
+
+    .high-contrast .text-slate-900,
+    .high-contrast .text-slate-800,
+    .high-contrast .text-black {
+      color: #fff;
+    }
+
+    .high-contrast .bg-finland-blue {
+      background-color: #FFD700;
+      color: #000;
+    }
+
+    .high-contrast .text-finland-blue {
+      color: #FFD700;
+    }
+
+    .high-contrast .bg-blue-50,
+    .high-contrast .bg-slate-50,
+    .high-contrast .bg-slate-100 {
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    .high-contrast .bg-gradient-to-r {
+      background: #000;
+      border: 2px solid #FFD700;
+    }
+
+    .high-contrast .hover\:border-finland-blue:hover {
+      border-color: #FFD700;
+    }
+
+    .high-contrast .group:hover .group-hover\:text-finland-blue {
+      color: #FFD700;
+    }
+
+    .high-contrast .group:hover .group-hover\:text-finland-blue {
+      color: #FFD700;
+    }
+  </style>
 </head>
-  <body class="bg-slate-50 text-slate-900 transition-colors duration-200">
-    <div id="root"></div>
-  </body>
+
+<body class="bg-slate-50 text-slate-900 transition-colors duration-200">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
