@@ -193,7 +193,16 @@ Steps:
     * Open your deployed URL (e.g., https://suomistart.vercel.app).
     * Go to Settings and enter your Gemini API Key to enable the AI features.
 
-### 9.3 Summary of Docker Commands
+### Environment Variable Note
+* GCP service account config JSON file
+    * Note that my Google Cloud Platform service account details JSON used to generate audio files by the Goocle Text to Sppech Service is found in`secrets\proud-outrider-483901-c3-98a96c5c4753.json`
+    * This file is not committed to the repo - so please remember to create this service account in your GCP console > IAM > service account menu, then download the JSON
+    * **This service account config JSON file is only needed to pre-generate the mp3 audio files. For normal users, you do not need this file**
+* Gemini API Key
+    * Live Tutor: Uses the Gemini API Key that you enter in the Settings page (Client-side). It does not use the service account.
+
+
+### 9.4 Summary of Docker Commands
 * Start: `docker-compose up --build`
 * Stop: Press `Ctrl+C` in the terminal.
 * Remove Containers: `docker-compose down`
