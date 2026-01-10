@@ -91,7 +91,7 @@ export const LivePractice = () => {
                         }
 
                         // Handle Audio
-                        const audioData = msg.serverContent?.modelTurn?.parts[0]?.inlineData?.data;
+                        const audioData = msg.serverContent?.modelTurn?.parts?.[0]?.inlineData?.data;
                         if (audioData) {
                             nextStartTimeRef.current = Math.max(nextStartTimeRef.current, outputAudioContext.currentTime);
                             const audioBuffer = await decodeAudioData(
