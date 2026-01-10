@@ -11,8 +11,8 @@ This repo contains code which you can run locally on your laptop.
 * To understand
   * the project, please read `markdown.md`
   * instructions on how to run the app locally or to deploy on a hosting service such as Vercel, please read `markdown.md section ## 9. Deployment Guide`
-  * The curriculum researched by Gemini 3 Pro in AI Studio, visit `data/curriculum.ts` and `data/curriculum.md`
-    * The words and sentences found in the curriculum were used to generate a corresponding audio/mp3 file using Google Cloud Text-to-Speech API (enabled in my Google Cloud Platform project)
+  * The curriculum was researched by `gemini-3-pro-preview` in AI Studio, visit `data/curriculum.ts` and `data/curriculum.md`
+    * The words and sentences found in the curriculum were used to generate a corresponding audio/mp3 file using `Google Cloud Text-to-Speech API (enabled in my Google Cloud Platform project)`
     * The mp3 files are stored in the `public/audio` folder, with file naming convention: `{finnish word or sentence}.mp3`
 * 3-minute demo video for the 2026.01.10 Saturday - SG Gemini Hackathon
   * https://www.youtube.com/watch?v=UjYpcIp_nRQ
