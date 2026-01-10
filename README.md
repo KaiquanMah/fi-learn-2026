@@ -12,7 +12,7 @@ This repo contains code which you can run locally on your laptop.
 * To understand
   * the project, please read `markdown.md`
   * instructions on how to run the app locally or to deploy on a hosting service such as Vercel, please read `markdown.md section ## 9. Deployment Guide`
-    * local: localhost:3000
+    * local: `localhost:3000`
     * vercel: https://fi-learn-2026.vercel.app
   * the curriculum researched by `gemini-3-pro-preview` in AI Studio, visit `data/curriculum.ts` and `data/curriculum.md`
     * the words and sentences found in the curriculum were used to generate a corresponding audio/mp3 file using `Google Cloud Text-to-Speech API (enabled in my Google Cloud Platform project)`
