@@ -20,9 +20,15 @@
     "noImplicitAny": false
   },
   "include": [
-    "src/**/*",
+    "pages/**/*",
+    "components/**/*",
+    "contexts/**/*",
     "data/**/*",
-    "utils/**/*"
+    "utils/**/*",
+    "types.ts",
+    "App.tsx",
+    "index.tsx",
+    "index.ts"
   ],
   "ts-node": {
     "transpileOnly": true,
