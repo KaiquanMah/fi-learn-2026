@@ -1,0 +1,70 @@
+@KaiquanMah ➜ /workspaces/fi-learn-2026 (main) $ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 414 bytes | 414.00 KiB/s, done.
+From https://github.com/KaiquanMah/fi-learn-2026
+   dea2a01..c72dfc8  main       -> origin/main
+Updating dea2a01..c72dfc8
+Fast-forward
+ .gitignore              | 26 ++------------------------
+ secrets/placeholder.txt |  0
+ 2 files changed, 2 insertions(+), 24 deletions(-)
+ create mode 100644 secrets/placeholder.txt
+@KaiquanMah ➜ /workspaces/fi-learn-2026 (main) $ export GOOGLE_APPLICATION_CREDENTIALS="./secrets/proud-outrider-483901-c3-98a96c5c4753.json"
+@KaiquanMah ➜ /workspaces/fi-learn-2026 (main) $ npm run generate-audio
+
+> suomistart@1.0.0 generate-audio
+> ts-node scripts/generate_audio.ts
+
+sh: 1: ts-node: not found
+
+
+
+
+@KaiquanMah ➜ /workspaces/fi-learn-2026 (main) $ npm install
+npm error code ETARGET
+npm error notarget No matching version found for @google/genai@^0.1.0.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: /home/codespace/.npm/_logs/2026-01-10T05_32_54_404Z-debug-0.log
+
+
+@KaiquanMah ➜ /workspaces/fi-learn-2026 (main) $ npm install --save-dev ts-node typescript
+npm error code ETARGET
+npm error notarget No matching version found for @google/genai@^0.1.0.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: /home/codespace/.npm/_logs/2026-01-10T05_33_54_574Z-debug-0.log
+
+
+
+
+
+@KaiquanMah ➜ /workspaces/fi-learn-2026 (main) $ npm install @google/genai@latest
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 191 packages, and audited 192 packages in 6s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+
+
+@KaiquanMah ➜ /workspaces/fi-learn-2026 (main) $ npm install --save-dev ts-node typescript
+
+up to date, audited 192 packages in 929ms
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+
+
+
