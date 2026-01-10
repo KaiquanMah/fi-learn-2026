@@ -22,7 +22,7 @@ const MainLayout = () => (
   </div>
 );
 
-const App = () => {
+export const App = () => {
   return (
     <AppProvider>
       <HashRouter>
@@ -39,5 +39,3 @@ const App = () => {
     </AppProvider>
   );
 };
-
-export default App;
