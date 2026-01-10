@@ -7,8 +7,9 @@
 import fs from 'fs';
 import path from 'path';
 import textToSpeech from '@google-cloud/text-to-speech';
-import { curriculumLevels } from '../data/curriculum';
-import { getAudioFilename } from '../utils/audioHelpers';
+// Explicit extensions added to fix ts-node resolution
+import { curriculumLevels } from '../data/curriculum.ts';
+import { getAudioFilename } from '../utils/audioHelpers.ts';
 
 // Ensure output directory exists
 const OUTPUT_DIR = path.join(__dirname, '../public/audio');
